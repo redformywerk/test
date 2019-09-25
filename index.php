@@ -11,7 +11,7 @@
 
 <body>
 		<div class="container">
-		<div class="message" > </div>
+		<div id="message" > </div>
 			<div class="row">
 					<div class="col-md-6 description" id="ad-list-container">
 					</div>
@@ -30,12 +30,12 @@
 							</div>
 							
 							<!-- Temporary form of login -->
-								<form id="login-form" action="login.php" method="POST" class="forms-login">
+								<!-- <form id="login-form" action="login.php" method="POST" class="forms-login">
 									<h4>Войти:</h4>
 									<input name="author_name" type="text" placeholder="Имя" required><br>
 									<input name="password" type="password" placeholder="пароль" required><br>
 									<input type="submit" value="Вход" class="forms-login__submit btn btn-primary"><br>
-								</form>
+								</form> -->
 								<? endif; ?>
 
 								<form id="add-new-ad" action="#" method="POST" class="forms-advert">
@@ -76,34 +76,35 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn btn-primary">Регистрация</button>
+        <button type="button" class="btn btn-primary">Регистрация</button>
       </div>
     </div>
   </div>
 </div>
 
 		<!-- Login Modal -->
-<!-- <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title" id="loginModalLongTitle">Войти</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span id="login-close" aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
       <form id= "login-form" action="login.php" method="POST" class="forms-login">
-			<input name="author_name" type="text" placeholder="Имя" required><br>
-			<input name="password" type="password" placeholder="пароль" required><br>
+			<input id="author_name" name="author_name" type="text" placeholder="Имя" required><br>
+			<input id="password" name="password" type="password" placeholder="пароль" required><br>
 		</form>
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn btn-primary">Вход</button>
+		<div id="errorMess"></div>
+        <button id="send-login" type="button" class="btn btn-success">Вход</button>
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 		<!-- bootstrap and jquery scripts -->
 		<script src="js/jquery-3.4.1.js"></script>
