@@ -1,0 +1,97 @@
+// Variables
+$formColor:  #a9cdff;
+$postBackground : rgba(255,255,255, .7);
+
+// bootstrap fixed
+.btn, .btn-primary {
+	box-shadow: none !important;
+}
+.custom-file-label::after {
+	content: "Выбрать" !important;
+}
+
+body {
+	font-family: 'Roboto Slab', sans-serif;
+	background: url(img/background/2.jpg);
+}
+input, textarea {
+	padding-left: 5px;
+	outline: none;
+}
+
+
+h2,h4 {
+	font-weight: bold;
+}
+
+.description {
+	margin-top: 20px;
+	justify-content:  center;
+	padding: 10px;
+	&-wrapper {
+		padding: 10px;
+		margin-bottom: 10px;
+		border: 1px rgba(80, 76, 76, .5) solid;
+		border-radius: .25rem;
+		background-color: $postBackground;
+	}
+	&__delete {
+		margin-left: 100%;
+		transform: translate(-100%, 0); 
+	}
+	&__title {
+		text-align: center;
+	}
+	&__img {
+		width: 100%;
+	}
+}
+
+.contacts {
+	margin-bottom: 30px;
+	text-align: center;
+	&__name, &__email {
+		margin-right: 5px;
+	}
+}
+
+textarea {
+	margin: 20px 0;
+	resize: none;
+	width: 100%;
+}
+
+.forms {
+	margin-top: 30px;
+	&-wrapper {
+		padding: 10px;
+		border-radius: .25rem;
+		background-color: $formColor;
+	}
+	&-buttons {
+		display: flex;
+		justify-content: space-around;
+	}
+	&-login {
+		h4 {
+			text-align: center;
+		}
+		&__submit {
+			margin-top: 10px;
+		}
+	}
+	&-advert {
+		margin-top: 20px;
+		h4 {
+			text-align: center;
+		}
+		&__image {
+			padding-left: 0;
+		}
+		&__submit {
+			margin-top: 20px;
+			margin-left: 50%;
+			transform: translate(-50%, 0); 
+		}
+	}
+}

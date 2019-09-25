@@ -1,0 +1,114 @@
+@charset "UTF-8";
+.btn, .btn-primary {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.custom-file-label::after {
+  content: "Выбрать" !important;
+}
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
+  background: url(img/background/2.jpg);
+}
+
+input, textarea {
+  padding-left: 5px;
+  outline: none;
+}
+
+h2, h4 {
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.description-wrapper {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px rgba(80, 76, 76, 0.5) solid;
+  border-radius: .25rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.description__delete {
+  margin-left: 100%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+
+.description__title {
+  text-align: center;
+}
+
+.description__img {
+  width: 100%;
+}
+
+.contacts {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contacts__name, .contacts__email {
+  margin-right: 5px;
+}
+
+textarea {
+  margin: 20px 0;
+  resize: none;
+  width: 100%;
+}
+
+.forms {
+  margin-top: 30px;
+}
+
+.forms-wrapper {
+  padding: 10px;
+  border-radius: .25rem;
+  background-color: #a9cdff;
+}
+
+.forms-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.forms-login h4 {
+  text-align: center;
+}
+
+.forms-login__submit {
+  margin-top: 10px;
+}
+
+.forms-advert {
+  margin-top: 20px;
+}
+
+.forms-advert h4 {
+  text-align: center;
+}
+
+.forms-advert__image {
+  padding-left: 0;
+}
+
+.forms-advert__submit {
+  margin-top: 20px;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+/*# sourceMappingURL=style.css.map */
